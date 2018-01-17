@@ -17,7 +17,8 @@ namespace System.Template.WindowsService
         {
             try
             {
-                IoC.Container.Resolve<IApiShell>().Start();  //start web app
+                //start the web app
+                IoC.Container.Resolve<IApiShell>().Start();  
                 IoC.Container.Resolve<IActorSystemShell>().Start();
             }
             catch (Exception ex)
