@@ -20,10 +20,11 @@ namespace System.Template.WindowsService
                 //start the web app
                 IoC.Container.Resolve<IApiShell>().Start();  
                 IoC.Container.Resolve<IActorSystemShell>().Start();
+                
             }
             catch (Exception ex)
             {
-                //log exception
+                //TODO: log exception. Need to implement logging
             }
         }
 
